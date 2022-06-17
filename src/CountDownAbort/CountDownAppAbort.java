@@ -16,5 +16,4 @@ public class CountDownAppAbort {
 
         for(Runnable e : events) new Thread(e).start();
     }
-
 }

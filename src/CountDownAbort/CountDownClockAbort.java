@@ -30,9 +30,6 @@ public class CountDownClockAbort implements Runnable, TimeMonitorAbort {
         Thread[] threads = new Thread[Thread.activeCount()];
         Thread.enumerate(threads);
 
-        for(Thread t : threads){
-            t.interrupt();
-        }
+        for(Thread t : threads) t.interrupt();
     }
-
 }
